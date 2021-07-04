@@ -47,6 +47,7 @@ export default () => {
     }
   }, [])
 
+  //muda filme em destaque
   const updateFeatured = async (id) => {
     let chosenMovie =  await TheMovieDB.getMovieInfo(id, 'tv');
     setFeaturedData(chosenMovie)
